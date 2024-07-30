@@ -5,12 +5,12 @@
 
 let firstCard = 10
 let secondCard = 12
-let sum = firstCard + secondCard +6 // 23
+let sum = firstCard + secondCard +6 
 
-if (sum  < 21) {
+if (sum <= 20) {
     console.log("Do you want to draw a new card? 🙂")
 } else if (sum === 21) {
     console.log("Wohoo! You've got Blackjack! 🥳")
-}  else if (sum > 21) {
+}  else {
     console.log("You're out of the game! 😭")
 }
