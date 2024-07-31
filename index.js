@@ -77,3 +77,11 @@ function newCard() {
       renderGame()
   }
 }
+if (startGameBtn) {
+  startGameBtn.addEventListener("click", startGame);
+  console.log("Start Game button listener added");
+}
+if (newCardBtn) {
+  newCardBtn.addEventListener("click", newCard);
+  console.log("New Card button listener added");
+}
