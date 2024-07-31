@@ -87,3 +87,4 @@ if (newCardBtn) {
 }
 messageEl.textContent = "Press 'Start Game' to begin!"
 console.log("Initial message set");
+}
