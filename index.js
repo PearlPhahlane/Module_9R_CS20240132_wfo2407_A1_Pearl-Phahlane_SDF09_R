@@ -68,3 +68,12 @@ function renderGame() {
   messageEl.textContent = message
   console.log("Game rendered. Message:", message);
 }
+function newCard() {
+  console.log("newCard function called");
+  if (isAlive === true && hasBlackJack === false) {
+      let card = getRandomCard()
+      sum += card
+      cards.push(card)
+      renderGame()
+  }
+}
