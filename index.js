@@ -17,3 +17,17 @@ document.addEventListener("DOMContentLoaded", function() {
  let playerEl = document.getElementById("player-el")
  let startGameBtn = document.getElementById("start-game-btn")
  let newCardBtn = document.getElementById("new-card-btn")
+
+ console.log("Elements retrieved:", {messageEl, sumEl, cardsEl, playerEl, startGameBtn, newCardBtn});
+ playerEl.textContent = player.name + ": $" + player.chips
+
+ function getRandomCard() {
+  let randomNumber = Math.floor(Math.random() * 13) + 1
+  if (randomNumber > 10) {
+      return 10
+  } else if (randomNumber === 1) {
+      return 11
+  } else {
+      return randomNumber
+  }
+}
