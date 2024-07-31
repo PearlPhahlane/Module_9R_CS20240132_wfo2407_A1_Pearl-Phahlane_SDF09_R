@@ -31,3 +31,18 @@ document.addEventListener("DOMContentLoaded", function() {
       return randomNumber
   }
 }
+function startGame() {
+  console.log("startGame function called");
+  if (player.chips >= 100) {
+      player.chips -= 100
+      playerEl.textContent = player.name + ": $" + player.chips
+      isAlive = true
+      hasBlackJack = false
+      let firstCard = getRandomCard()
+      let secondCard = getRandomCard()
+      cards = [firstCard, secondCard]
+      sum = firstCard + secondCard
+      console.log("Game started with cards:", cards, "sum:", sum);
+      renderGame()
+  }
+}
